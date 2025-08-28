@@ -12,9 +12,14 @@ namespace GourmetBakery
 {
     public partial class MenuPrincipal : Form
     {
-        public MenuPrincipal()
+        //Váriaveis globais (Métodos)
+        Model.Usuario usuario = new Model.Usuario(); //Tornar o objeto "usuario" global.
+
+        public MenuPrincipal(Model.Usuario usuario) //Assinatura do MenuPrincipal (Regra para ser utilizado)
         {
             InitializeComponent();
+            this.usuario = usuario; // <- Esse Método irá chamar o objeto "usuario"
+            lblCumprimento.Text = $"Olá {usuario.NomeCompleto},\n Escolha uma opção abaixo";
         }
     }
 }
