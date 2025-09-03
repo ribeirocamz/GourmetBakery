@@ -18,8 +18,21 @@ namespace GourmetBakery
         public MenuPrincipal(Model.Usuario usuario) //Assinatura do MenuPrincipal (Regra para ser utilizado)
         {
             InitializeComponent();
-            this.usuario = usuario; // <- Esse Método irá chamar o objeto "usuario"
+            this.usuario = usuario; // <- Esse Método irá chamar o objeto "usuario" (juntar os dois)
+
+            //Atribuir texto ao lblCumprimento na tela inicial:
             lblCumprimento.Text = $"Olá {usuario.NomeCompleto},\n Escolha uma opção abaixo";
+        }
+
+        private void btnComandas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            FormUsuarios formUsuarios = new FormUsuarios(usuario);
+            formUsuarios.ShowDialog(); // Mostrar o form
         }
     }
 }

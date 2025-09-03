@@ -35,8 +35,8 @@
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnCaixa = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.pibLogo2 = new System.Windows.Forms.PictureBox();
             this.lblSubtituloMenuPrincipal = new System.Windows.Forms.Label();
+            this.pibLogo2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pibLogo2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +73,7 @@
             this.btnComandas.TabIndex = 4;
             this.btnComandas.Text = "Comandas";
             this.btnComandas.UseVisualStyleBackColor = true;
+            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
             // 
             // btnProdutos
             // 
@@ -112,16 +113,7 @@
             this.btnUsuarios.TabIndex = 7;
             this.btnUsuarios.Text = "Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // pibLogo2
-            // 
-            this.pibLogo2.Image = global::GourmetBakery.Properties.Resources.pao;
-            this.pibLogo2.Location = new System.Drawing.Point(12, 24);
-            this.pibLogo2.Name = "pibLogo2";
-            this.pibLogo2.Size = new System.Drawing.Size(133, 114);
-            this.pibLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pibLogo2.TabIndex = 2;
-            this.pibLogo2.TabStop = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // lblSubtituloMenuPrincipal
             // 
@@ -132,6 +124,16 @@
             this.lblSubtituloMenuPrincipal.Size = new System.Drawing.Size(156, 26);
             this.lblSubtituloMenuPrincipal.TabIndex = 8;
             this.lblSubtituloMenuPrincipal.Text = "Menu Principal";
+            // 
+            // pibLogo2
+            // 
+            this.pibLogo2.Image = global::GourmetBakery.Properties.Resources.pao;
+            this.pibLogo2.Location = new System.Drawing.Point(12, 24);
+            this.pibLogo2.Name = "pibLogo2";
+            this.pibLogo2.Size = new System.Drawing.Size(133, 114);
+            this.pibLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pibLogo2.TabIndex = 2;
+            this.pibLogo2.TabStop = false;
             // 
             // MenuPrincipal
             // 

@@ -81,6 +81,7 @@
             this.txbSenha.PasswordChar = '•';
             this.txbSenha.Size = new System.Drawing.Size(126, 20);
             this.txbSenha.TabIndex = 4;
+            this.txbSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbSenha_KeyDown);
             // 
             // btnEntrar
             // 

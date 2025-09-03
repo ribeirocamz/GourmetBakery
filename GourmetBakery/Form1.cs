@@ -69,5 +69,13 @@ namespace GourmetBakery
 
             }
         }
+
+        private void txbSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEntrar.PerformClick();
+            }
+        }
     }
 }
