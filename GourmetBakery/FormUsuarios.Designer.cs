@@ -290,7 +290,7 @@
             // 
             // pibIcone
             // 
-            this.pibIcone.Image = global::GourmetBakery.Properties.Resources.logo;
+            this.pibIcone.Image = global::GourmetBakery.Properties.Resources.gerenciar_funcionario;
             this.pibIcone.Location = new System.Drawing.Point(708, 12);
             this.pibIcone.Name = "pibIcone";
             this.pibIcone.Size = new System.Drawing.Size(91, 78);

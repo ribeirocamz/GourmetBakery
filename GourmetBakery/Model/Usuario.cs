@@ -63,7 +63,6 @@ namespace GourmetBakery.Model
             conexaoBD.Desconectar(con);
             return tabela;
         }
-
         public bool Cadastrar()
         {
             string comando = "INSERT INTO usuarios (nome_completo, email, senha) VALUES " +
