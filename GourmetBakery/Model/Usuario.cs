@@ -51,6 +51,7 @@ namespace GourmetBakery.Model
             conexaoBD.Desconectar(con);
             return tabela;
         }
+
         public DataTable Listar()
         {
             string comando = "SELECT id, nome_completo, email FROM usuarios";
@@ -63,6 +64,7 @@ namespace GourmetBakery.Model
             conexaoBD.Desconectar(con);
             return tabela;
         }
+
         public bool Cadastrar()
         {
             string comando = "INSERT INTO usuarios (nome_completo, email, senha) VALUES " +
@@ -100,6 +102,7 @@ namespace GourmetBakery.Model
                 return false;
             }
         }
+
         public bool Apagar()
         {
             string comando = "DELETE FROM usuarios WHERE id = @id";
@@ -129,6 +132,7 @@ namespace GourmetBakery.Model
                 return false;
             }
         }
+
         public bool Modificar()
         {
             string comando = "UPDATE usuarios SET nome_completo = @nome_completo, " +

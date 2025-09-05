@@ -17,6 +17,7 @@ namespace GourmetBakery
         Model.Usuario usuario;
         int idSelecionado = 0; //Armazenar o id do usuário selecionado para apagar ou editar
 
+        //Construtor:
         public FormUsuarios(Model.Usuario usuario)
         {
             InitializeComponent();

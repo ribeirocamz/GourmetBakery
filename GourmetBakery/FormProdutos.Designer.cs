@@ -65,6 +65,7 @@
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.Size = new System.Drawing.Size(760, 305);
             this.dgvProdutos.TabIndex = 0;
+            this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
             // 
             // grbCadastrar
             // 
@@ -94,6 +95,7 @@
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // cmbCategoriaCadastro
             // 
@@ -103,6 +105,7 @@
             this.cmbCategoriaCadastro.Name = "cmbCategoriaCadastro";
             this.cmbCategoriaCadastro.Size = new System.Drawing.Size(165, 25);
             this.cmbCategoriaCadastro.TabIndex = 5;
+            this.cmbCategoriaCadastro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbCategoriaCadastro_KeyDown);
             // 
             // lblCategoriaCadastro
             // 
@@ -154,6 +157,7 @@
             this.grbEditar.Controls.Add(this.lblPrecoEditar);
             this.grbEditar.Controls.Add(this.txbNomeEditar);
             this.grbEditar.Controls.Add(this.lblNomeEditar);
+            this.grbEditar.Enabled = false;
             this.grbEditar.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbEditar.Location = new System.Drawing.Point(423, 431);
             this.grbEditar.Name = "grbEditar";
@@ -172,6 +176,7 @@
             this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // cmbCategoriaEditar
             // 
@@ -181,6 +186,7 @@
             this.cmbCategoriaEditar.Name = "cmbCategoriaEditar";
             this.cmbCategoriaEditar.Size = new System.Drawing.Size(165, 25);
             this.cmbCategoriaEditar.TabIndex = 5;
+            this.cmbCategoriaEditar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbCategoriaEditar_KeyDown);
             // 
             // lblCategoriaEditar
             // 
@@ -247,6 +253,7 @@
             this.btnApagar.TabIndex = 1;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // lblApagarDescricao
             // 
